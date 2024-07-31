@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      fetch('http://localhost:5500/api/sav', {
+      fetch('/api/sav', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
