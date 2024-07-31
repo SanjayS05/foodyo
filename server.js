@@ -6,13 +6,13 @@ const path = require('path');
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json()); 
 app.use(cors()); 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const uri = "mongodb+srv://v7studiophoto:v7studio@cluster0.fr3oata.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGODB_URI;
 let db;
 
 async function connectToDb() {
