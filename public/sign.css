@@ -1,0 +1,118 @@
+body {
+    font-family: "Iceberg", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.signup-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    padding-left: 70px;
+    position: relative;
+}
+
+.form-section h2 {
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+    position: relative;
+    align-self: flex-start;
+    width: 75%;
+    max-width: calc(100% - 60px);
+}
+
+.form-section h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-section input,
+.form-section select,
+.form-section button {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-section input,
+.form-section select {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-section input::placeholder {
+    color: red;
+}
+
+.styled-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    color: #000;
+    border: 1px solid red;
+    padding: 12px;
+    border-radius: 5px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 6.342a.56.56 0 0 1 .398-.959h10.302a.56.56 0 0 1 .398.959L8.753 11.14a.565.565 0 0 1-.84 0z"/> </svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.styled-select option:first-of-type {
+    color: red;
+}
+
+.styled-select option:not(:first-of-type) {
+    color: black;
+}
+
+.form-section button {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: darkred;
+}
