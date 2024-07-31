@@ -63,7 +63,7 @@ connectToDb().then(() => {
     });
 
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'public', 'SignUp.html'));
+        res.sendFile(path.join(__dirname, 'public', 'sign.html'));
     });
 
     app.listen(port, () => {
